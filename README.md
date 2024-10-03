@@ -15,8 +15,8 @@ This tool should not be used alone, but rather to supplement other checks.
 
 # Executing
 
-pip3 install -r requirements.txt
-python main.py# mealchk-cli
+```pip3 install -r requirements.txt```
+```python main.py# mealchk-cli```
 
 # Technical documentation
 
