@@ -5,30 +5,6 @@ Please note that due to the way manufacturers label food, in some cases some ing
 
 This tool should not be used alone, but rather to supplement other checks.
 
-## Installation & Setup
-
-### Providers
-#### Local (Pytesseract)
-##### MacOS
-
-```brew install tesseract```
-
-# Executing
-
-```pip3 install -r requirements.txt```
-
-```python main.py mealchk-cli```
-
-#### Google Cloud (gcloud)
-##### Configure API key
-Ensure that a valid API key is set via the GOOGLE_APPLICATION_CREDENTIALS environment variable.
-
-e.g. export GOOGLE_APPLICATION_CREDENTIALS="/home/you/project-000-fff.json"
-
-# Technical documentation
-
-mealchk-api is written in Python.
-
 # Image recognition providers
 Multiple methods of image recognition are available to use, currently the following are supported:
 
@@ -36,12 +12,47 @@ Multiple methods of image recognition are available to use, currently the follow
 * AWS Rekognition (TODO)
 * Google Cloud (google-cloud-vision)
 
-The provider can currently be set by setting the PROVIDER const within main.py (future releases will allow provider to be set via command line arguments)
+The provider can currently be set by setting the PROVIDER const within main.py (future releases will allow provider to be set via command line arguments). You can also add your own image recognition providers within ```providers/```
+
+# Installation & Setup
+
+## Providers
+### Local (Pytesseract)
+#### MacOS
+
+```brew install tesseract```
+
+### Google Cloud (gcloud)
+#### Configure API key
+Ensure that a valid API key is set via the GOOGLE_APPLICATION_CREDENTIALS environment variable.
+
+```export GOOGLE_APPLICATION_CREDENTIALS="/home/you/project-000-fff.json"```
+
+# Executing
+
+```
+# Create virtualenv
+python3 -m venv ./virtualenv
+
+# Activate virtualenv
+source ./virtualenv/bin/activate
+
+# Install requirements via pip
+pip3 install -r requirements.txt
+
+# Run program
+python main.py mealchk-cli
+```
 
 # Example usage:
 
+**Example 1:**
 ```python3 main.py img/sample/ingredients1.jpg```
+
+**Example 2:**
 ```python3 main.py img/sample/ingredients2.jpg```
+
+**Example 3:**
 ```python3 main.py img/sample/ingredients3.jpg```
 
 # Credit
