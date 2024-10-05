@@ -1,5 +1,5 @@
 # Overview
-mealchk-cli provides an experimental CLI for detecting potential artificial or processed ingredients, and can be used to help aid following a paleo, whole30, or clean-eating lifestyle.
+mealchk-cli provides an experimental CLI for detecting potential artificial or processed ingredients in food labels.
 
 Please note that due to the way manufacturers label food, in some cases some ingredients may not always be detected.
 
