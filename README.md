@@ -5,6 +5,16 @@ Please note that due to the way manufacturers label food, in some cases some ing
 
 This tool should not be used alone, but rather to supplement other checks.
 
+# Screenshots
+
+**Example #1 (Original image + mealchk-cli output):**
+
+<img src="https://github.com/user-attachments/assets/17c38445-22d1-48e0-a1ee-236e6f27f338" alt="Example 1" width="720" />
+
+**Example #2 (Original image + mealchk-cli output):**
+
+<img src="https://github.com/user-attachments/assets/c5e48545-e267-490c-b17b-e8de1fdcbb49" alt="Example 2" width="720" />
+
 # Image recognition providers
 Multiple methods of image recognition are available to use, currently the following are supported:
 
@@ -56,6 +66,12 @@ python main.py mealchk-cli
 **Example 2 (multiple images):**
 
 ```python3 main.py img/sample/ingredients2.jpg img/sample/ingredients3.jpg```
+
+## Sample images
+
+Sample images are provided in img/sample. 
+
+Future versions of mealchk may integrate webcam.
 
 # Credit
 
