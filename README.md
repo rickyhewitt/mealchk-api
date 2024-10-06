@@ -50,9 +50,11 @@ python main.py mealchk-cli
 # Example usage:
 
 **Example 1 (single image):**
+
 ```python3 main.py img/sample/ingredients1.jpg```
 
 **Example 2 (multiple images):**
+
 ```python3 main.py img/sample/ingredients2.jpg img/sample/ingredients3.jpg```
 
 # Credit
