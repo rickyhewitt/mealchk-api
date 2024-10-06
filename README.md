@@ -16,7 +16,10 @@ The provider can currently be set by setting the PROVIDER const within main.py (
 
 # Installation & Setup
 
-## Providers
+## Provider plugins
+
+Configuration is only required for the active provider plugin that is enabled. Feel free to skip, for example, the Google Cloud configuration if you are only using local or AWS.
+
 ### Local (Pytesseract)
 #### MacOS
 
@@ -46,14 +49,11 @@ python main.py mealchk-cli
 
 # Example usage:
 
-**Example 1:**
+**Example 1 (single image):**
 ```python3 main.py img/sample/ingredients1.jpg```
 
-**Example 2:**
-```python3 main.py img/sample/ingredients2.jpg```
-
-**Example 3:**
-```python3 main.py img/sample/ingredients3.jpg```
+**Example 2 (multiple images):**
+```python3 main.py img/sample/ingredients2.jpg img/sample/ingredients3.jpg```
 
 # Credit
 
